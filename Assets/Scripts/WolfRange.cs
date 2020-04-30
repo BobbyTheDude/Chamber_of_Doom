@@ -39,9 +39,9 @@ public class WolfRange: MonoBehaviour
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
+            Waypoint2.SetActive(true);
             Wolf.GetComponent<WolfControl>().SwitchWaypoint();
             Wolf.GetComponent<WolfControl>().waypoint1 = RealWaypoint;
-            Waypoint2.SetActive(true);
             if (Waypoint2.GetComponent<WolfToIdle>().Iscolliding == false)
             {
                 Vector3 theScale = Wolf.transform.localScale;
