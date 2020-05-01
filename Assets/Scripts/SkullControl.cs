@@ -22,8 +22,21 @@ public class SkullControl : MonoBehaviour
         float y = 1.25f;
         Vector3 SpawnPoint = transform.position;
         SpawnPoint.y -= (FireBall.GetComponent<Renderer>().bounds.size.y / 2) + (GetComponent<Renderer>().bounds.size.y / 2);
+        SpawnPoint.y += 1;
         SpawnPoint.z = 0;
         GameObject.Instantiate(FireBall, SpawnPoint, transform.rotation);
+        FireBall.GetComponent<FireballControl>().YSpeed = 0;
+        FireBall.GetComponent<FireballControl>().XSpeed = 2f;
+        GameObject.Instantiate(FireBall, SpawnPoint, transform.rotation);
+        FireBall.GetComponent<FireballControl>().YSpeed = 0;
+        FireBall.GetComponent<FireballControl>().XSpeed = -2f;
+        GameObject.Instantiate(FireBall, SpawnPoint, transform.rotation);
+        FireBall.GetComponent<FireballControl>().YSpeed = 2f;
+        FireBall.GetComponent<FireballControl>().XSpeed = 2f;
+        GameObject.Instantiate(FireBall, SpawnPoint, transform.rotation);
+        FireBall.GetComponent<FireballControl>().YSpeed = 2f;
+        FireBall.GetComponent<FireballControl>().XSpeed = -2f;
+
     }
     void Start()
     {
@@ -53,6 +66,7 @@ public class SkullControl : MonoBehaviour
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
+            EnemyFire();
             Firing = true;
         }
     }

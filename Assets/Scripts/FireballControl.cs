@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class FireballControl : MonoBehaviour
 {
-    public float Speed;
+    public float XSpeed;
+    public float YSpeed;
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, Speed);
+        rb.velocity = new Vector2(XSpeed, YSpeed);
     }
 
     void Update()
