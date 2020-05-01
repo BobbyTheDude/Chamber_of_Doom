@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 public class FireballControl : MonoBehaviour
 {
     public float XSpeed;
     public float YSpeed;
     private Rigidbody2D rb;
+    public LivesManager LivesManagerScript;
+
 
     void Start()
     {
+        LivesManagerScript = GameObject.Find("LivesManager").GetComponent<LivesManager>();
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(XSpeed, YSpeed);
     }
@@ -28,7 +30,7 @@ public class FireballControl : MonoBehaviour
         {
             GameObject.Destroy(this.gameObject);
             GameObject.Destroy(collision.gameObject);
-            SceneManager.LoadScene("GameOver");
+            LivesManagerScript.GetComponent<LivesManager>().Dead = true;
         }
     }
 }

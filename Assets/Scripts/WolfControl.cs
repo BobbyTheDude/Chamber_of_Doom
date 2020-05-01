@@ -116,7 +116,7 @@ public class WolfControl : MonoBehaviour
     {
         if (LayerMask.LayerToName(other.gameObject.layer) == "Player")
         {
-            SceneManager.LoadScene("GameOver");
+            //SceneManager.LoadScene("GameOver");
         }
     }
 }
