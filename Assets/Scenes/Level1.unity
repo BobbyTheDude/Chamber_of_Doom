@@ -56759,8 +56759,8 @@ MonoBehaviour:
     type: 3}
   Firing: 0
   animator: {fileID: 1670115998}
-  TimerMin: 50
-  TimerMax: 51
+  TimerMin: 60
+  TimerMax: 61
 --- !u!58 &1670116002
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57073,7 +57073,7 @@ PrefabInstance:
     - target: {fileID: 4875717141804076443, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4875717142017235650, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}
@@ -57089,10 +57089,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5213255967919429743, guid: 152327f840fe81041a846756c4e46887,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213255968776515310, guid: 152327f840fe81041a846756c4e46887,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213255968776515310, guid: 152327f840fe81041a846756c4e46887,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213255968881955641, guid: 152327f840fe81041a846756c4e46887,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213255968881955641, guid: 152327f840fe81041a846756c4e46887,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5213255968968905568, guid: 152327f840fe81041a846756c4e46887,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.7482
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 5213255968968905568, guid: 152327f840fe81041a846756c4e46887,
         type: 3}
@@ -57167,7 +57192,7 @@ PrefabInstance:
     - target: {fileID: 5213255968968905569, guid: 152327f840fe81041a846756c4e46887,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 152327f840fe81041a846756c4e46887, type: 3}
