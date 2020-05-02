@@ -6,14 +6,15 @@ public class MudTrapController : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
             collision.gameObject.GetComponent<PlayerMove>().RunSpeed = 10f;
+            Debug.Log("He's slower now!");
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
             collision.gameObject.GetComponent<PlayerMove>().RunSpeed = 25f;
         }

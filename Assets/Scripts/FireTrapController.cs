@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireTrapController : MonoBehaviour
 {
-    public bool Fire = false;
+    public bool Fire;
     public GameObject FireSpout;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -12,7 +12,9 @@ public class FireTrapController : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
             Fire = true;
-            FireSpout.SetActive(true);
+            Vector3 FirePoint = transform.position;
+            FirePoint.y += 1;
+            GameObject.Instantiate(FireSpout, FirePoint, transform.rotation);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -20,7 +22,7 @@ public class FireTrapController : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
             Fire = false;
-            FireSpout.SetActive(false);
+            Debug.Log("Turned off fire trap");
         }
     }
 }
