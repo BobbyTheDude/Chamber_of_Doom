@@ -12,6 +12,7 @@ public class LivesManager : MonoBehaviour
     public Transform RespawnPoint;
     public GameObject Camera;
     public GameObject HUD;
+    public AudioClip DeathSound;
 
     public void UpdateLivesText()
     {
@@ -32,6 +33,7 @@ public class LivesManager : MonoBehaviour
     {
         if (Dead == true)
         {
+            AudioSource.PlayClipAtPoint(DeathSound, transform.position);
             Lives -= 1;
             GameObject NewPlayer = GameObject.Instantiate(PlayerInst, RespawnPoint.transform.position, RespawnPoint.transform.rotation);
             Camera.GetComponent<CameraFollow>().FollowTransform = NewPlayer.transform;

@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class FallZone : MonoBehaviour
 {
+    public LivesManager LivesManagerScript;
     // Start is called before the first frame update
     void Start()
     {
-        
+        LivesManagerScript = GameObject.Find("LivesManager").GetComponent<LivesManager>();
     }
 
     // Update is called once per frame
@@ -20,7 +21,8 @@ public class FallZone : MonoBehaviour
     {
         if (LayerMask.LayerToName(other.gameObject.layer) == "Player")
         {
-            SceneManager.LoadScene("GameOver");
+            GameObject.Destroy(other.gameObject);
+            LivesManagerScript.GetComponent<LivesManager>().Dead = true;
         }
     }
 }
