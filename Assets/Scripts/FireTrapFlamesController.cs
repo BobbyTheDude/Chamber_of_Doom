@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class FireTrapFlamesController : MonoBehaviour
 {
-    public bool isOn;
     public LivesManager LivesManagerScript;
-    public GameObject ParentTrap;
 
     //Access LivesManager if player gets killed
     void Start()
     {
         LivesManagerScript = GameObject.Find("LivesManager").GetComponent<LivesManager>();
-        Debug.Log("firetrap turned on");
-        isOn = true;
+        //Debug.Log("firetrap turned on");
     }
     /*
     //Checks to see if FireTrap turns off
@@ -27,7 +24,7 @@ public class FireTrapFlamesController : MonoBehaviour
     }    */
 
     //Flames kill player
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
