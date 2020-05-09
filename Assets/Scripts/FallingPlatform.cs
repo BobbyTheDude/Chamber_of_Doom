@@ -6,7 +6,7 @@ public class FallingPlatform : MonoBehaviour
 {
 	Rigidbody2D rb;
 	private Vector3 originalPosition;
-	public float resetPositionAfterSeconds = 10f;
+	public float resetPositionAfterSeconds = 2f;
 
 	// Use this for initialization
 	void Start()
