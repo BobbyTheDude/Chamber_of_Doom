@@ -683,8 +683,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.96}
-    newSize: {x: 0.64, y: 0.96}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -744,12 +744,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: b99393194e5fb074aa6861e774d9c343, type: 3}
+  m_Sprite: {fileID: 3204583437274294478, guid: b87441140e5ce6a4d943ad02a409db76,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.96}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -763,8 +764,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572683506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.35, y: -0.19, z: 0}
-  m_LocalScale: {x: 1.6988, y: 1.6988, z: 1.6988}
+  m_LocalPosition: {x: 10.908, y: -0.724, z: 0}
+  m_LocalScale: {x: 3.456855, y: 3.456855, z: 3.456855}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
@@ -57306,7 +57307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1670115998
 Animator:
   serializedVersion: 3
@@ -58105,7 +58106,7 @@ PrefabInstance:
     - target: {fileID: 4875717141804076443, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4875717142017235650, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}
@@ -58224,7 +58225,7 @@ PrefabInstance:
     - target: {fileID: 5213255968968905569, guid: 152327f840fe81041a846756c4e46887,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 152327f840fe81041a846756c4e46887, type: 3}
