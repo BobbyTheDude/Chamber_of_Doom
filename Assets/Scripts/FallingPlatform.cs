@@ -5,8 +5,10 @@ using UnityEngine;
 public class FallingPlatform : MonoBehaviour
 {
 	Rigidbody2D rb;
-	private Vector3 originalPosition;
+	private Vector2 originalPosition;
 	public float resetPositionAfterSeconds = 2f;
+	public GameObject NewPlatform;
+
 
 	// Use this for initialization
 	void Start()
@@ -25,7 +27,7 @@ public class FallingPlatform : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
-			rb.gravityScale = .5f;
+			rb.gravityScale = .25f;
 			StartCoroutine(Delay(resetPositionAfterSeconds));
 		}
 	}

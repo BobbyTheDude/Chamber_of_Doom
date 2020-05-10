@@ -14,6 +14,7 @@ public class GargoyleControl : MonoBehaviour
     private int currentWaypoint = 1;
     public Transform waypoint1;
     public Transform waypoint2;
+    public LivesManager LivesManagerScript;
 
     //https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
     // Transforms to act as start and end markers for the journey.
@@ -34,6 +35,7 @@ public class GargoyleControl : MonoBehaviour
     {
         //source = GetComponent<AudioSource>();
         //gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        LivesManagerScript = GameObject.Find("LivesManager").GetComponent<LivesManager>();
     }
 
     private void Update()
@@ -104,7 +106,8 @@ public class GargoyleControl : MonoBehaviour
     {
         if (LayerMask.LayerToName(other.gameObject.layer) == "Player")
         {
-            SceneManager.LoadScene("GameOver");
+            GameObject.Destroy(other.gameObject);
+            LivesManagerScript.GetComponent<LivesManager>().Dead = true;
         }
     }
 }
