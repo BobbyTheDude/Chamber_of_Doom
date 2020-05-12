@@ -14,6 +14,7 @@ public class WolfControl : MonoBehaviour
     private int currentWaypoint = 1;
     public Transform waypoint1;
     public Transform waypoint2;
+    public LivesManager LivesManagerScript;
 
     public Animator animator;
     public bool Chasing = false;
@@ -37,6 +38,7 @@ public class WolfControl : MonoBehaviour
     {
         //source = GetComponent<AudioSource>();
         //gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        LivesManagerScript = GameObject.Find("LivesManager").GetComponent<LivesManager>();
     }
 
     public void Update()
@@ -116,7 +118,8 @@ public class WolfControl : MonoBehaviour
     {
         if (LayerMask.LayerToName(other.gameObject.layer) == "Player")
         {
-            //SceneManager.LoadScene("GameOver");
+            GameObject.Destroy(other.gameObject);
+            LivesManagerScript.GetComponent<LivesManager>().Dead = true;
         }
     }
 }

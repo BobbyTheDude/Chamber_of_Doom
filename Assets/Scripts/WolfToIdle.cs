@@ -23,7 +23,6 @@ public class WolfToIdle : MonoBehaviour
         {
             Wolf.GetComponent<WolfControl>().Chasing = false;
             Iscolliding = true;
-
         }
     }
     public void OnTriggerExit2D(Collider2D collision)

@@ -32,7 +32,6 @@ public class WolfRange: MonoBehaviour
             Wolf.GetComponent<WolfControl>().Chasing = true;
             Debug.Log("enter works");
             Waypoint2.SetActive(false);
-
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
