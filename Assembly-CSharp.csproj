@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\LivesManager.cs" />
     <Compile Include="Assets\Scripts\MenuManageScript.cs" />
     <Compile Include="Assets\Scripts\MudTrapController.cs" />
+    <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PotionController.cs" />
     <Compile Include="Assets\Scripts\SkullControl.cs" />
