@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4875717141109632169}
   - component: {fileID: 4875717141109632172}
   - component: {fileID: 4875717141109632173}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Wolf Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoint1: {fileID: 4875717142168398127}
   waypoint2: {fileID: 4875717141282461964}
+  LivesManagerScript: {fileID: 0}
   animator: {fileID: 4875717141109632169}
   Chasing: 0
   speed: 0.01

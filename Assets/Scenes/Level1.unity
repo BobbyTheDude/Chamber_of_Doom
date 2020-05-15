@@ -380,6 +380,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4875717141109632171, guid: b1d75d02ed3b0de46a4728de92d64c41,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4875717141109632174, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}
       propertyPath: m_Offset.y

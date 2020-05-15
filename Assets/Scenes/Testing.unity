@@ -665,7 +665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &572683507
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -705,6 +705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoorToControl: {fileID: 776485837}
+  animator: {fileID: 0}
+  LeverSound: {fileID: 0}
 --- !u!212 &572683509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -764,7 +766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572683506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.908, y: -0.724, z: 0}
+  m_LocalPosition: {x: 64.558, y: -0.724, z: 0}
   m_LocalScale: {x: 3.456855, y: 3.456855, z: 3.456855}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54783,7 +54785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &776485838
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56979,7 +56981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1670115998
 Animator:
   serializedVersion: 3
@@ -57363,7 +57365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1829370160
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57594,7 +57596,7 @@ PrefabInstance:
     - target: {fileID: 4875717141804076440, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.033693
+      value: 36.61
       objectReference: {fileID: 0}
     - target: {fileID: 4875717141804076440, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}
@@ -57650,11 +57652,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wolf
-      objectReference: {fileID: 0}
-    - target: {fileID: 4875717141804076443, guid: b1d75d02ed3b0de46a4728de92d64c41,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4875717142017235650, guid: b1d75d02ed3b0de46a4728de92d64c41,
         type: 3}

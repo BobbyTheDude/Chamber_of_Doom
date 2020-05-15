@@ -22,6 +22,7 @@ public class WolfToIdle : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Enemy")
         {
             Wolf.GetComponent<WolfControl>().Chasing = false;
+            Debug.Log("Waypoint colliding with wolf");
             Iscolliding = true;
         }
     }

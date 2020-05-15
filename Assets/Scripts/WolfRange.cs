@@ -31,16 +31,16 @@ public class WolfRange: MonoBehaviour
             Wolf.GetComponent<WolfControl>().waypoint1 = PlayerTransform;
             Wolf.GetComponent<WolfControl>().Chasing = true;
             Debug.Log("enter works");
-            Waypoint2.SetActive(false);
+            //Waypoint2.SetActive(false);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
-            Waypoint2.SetActive(true);
-            Wolf.GetComponent<WolfControl>().SwitchWaypoint();
+            //Waypoint2.SetActive(true);
             Wolf.GetComponent<WolfControl>().waypoint1 = RealWaypoint;
+            Wolf.GetComponent<WolfControl>().SwitchWaypoint();
             if (Waypoint2.GetComponent<WolfToIdle>().Iscolliding == false)
             {
                 Vector3 theScale = Wolf.transform.localScale;
