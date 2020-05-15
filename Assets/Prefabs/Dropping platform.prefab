@@ -337,10 +337,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5670629248776420704}
-  - component: {fileID: 5670629248776420705}
   - component: {fileID: 5670629248776420735}
   - component: {fileID: 5670629248776420734}
   - component: {fileID: 5670629248776420733}
+  - component: {fileID: 708135492}
   m_Layer: 8
   m_Name: Dropping platform
   m_TagString: Untagged
@@ -366,27 +366,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &5670629248776420705
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5670629248776420706}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &5670629248776420735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -425,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f370fe6cd462a4eb23978931ebfa06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetPositionAfterSeconds: 2
+  resetPositionAfterSeconds: 10
   NewPlatform: {fileID: 5670629248776420706}
 --- !u!61 &5670629248776420733
 BoxCollider2D:
@@ -453,3 +432,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.972371, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &708135492
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670629248776420706}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
