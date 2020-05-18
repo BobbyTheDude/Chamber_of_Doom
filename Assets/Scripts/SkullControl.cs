@@ -12,8 +12,8 @@ public class SkullControl : MonoBehaviour
 
     public Animator animator;
 
-    public float TimerMin = 5f;
-    public float TimerMax = 25f;
+    public float TimerMin = 60f;
+    public float TimerMax = 61f;
 
     // Start is called before the first frame update
 

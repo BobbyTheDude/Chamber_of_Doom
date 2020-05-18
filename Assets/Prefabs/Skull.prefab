@@ -137,5 +137,5 @@ MonoBehaviour:
     type: 3}
   Firing: 0
   animator: {fileID: 2319698560939230518}
-  TimerMin: 60
-  TimerMax: 61
+  TimerMin: 75
+  TimerMax: 76

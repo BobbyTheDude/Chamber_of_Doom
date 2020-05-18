@@ -135,8 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   XSpeed: -2
   YSpeed: 2
-  LivesManager: {fileID: 5137083906640323816, guid: 55e18fbcb822a17458c737880720c9be,
-    type: 3}
+  LivesManagerScript: {fileID: 0}
+  Skull: {fileID: 2319698560939230517, guid: 8d0b560238300304c8852878e7f030d7, type: 3}
 --- !u!50 &1129482250
 Rigidbody2D:
   serializedVersion: 4

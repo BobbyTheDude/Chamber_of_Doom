@@ -103165,7 +103165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30e1dcfa5ee9294e802f9fecd1ffaa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: WinScreen
+  NextLevel: Level2
 --- !u!61 &1712968950
 BoxCollider2D:
   m_ObjectHideFlags: 0

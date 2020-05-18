@@ -29,7 +29,7 @@ public class FallingCeiling : MonoBehaviour
 		if (other.tag == "Player")
 		{
 			rb.isKinematic = false;
-			rb.gravityScale = 1f;
+			rb.gravityScale = .75f;
 			StartCoroutine(Delay(resetPositionAfterSeconds));
 
 		}
